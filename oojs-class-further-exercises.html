@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>学习javascript</title>
+    </head>
+    <body>
+        <div>
+            <label for="jscode">Enter code:</label>
+            <input type="text" id="jscode">
+            <button>Submit code</button>
+            <p>这是一段话</p>
+        </div>
+    </body>
+    <script>
+        var input=document.querySelector('input');
+        var btn=document.querySelector('button');
+        var para=document.querySelector('p');
+
+        btn.onclick = function () {
+            var code=input.value;
+            para.textContent=eval(code);
+        }
+
+        function Person(first, last, age, gender, interests) {
+            this.name = {
+                first,
+                last
+            };
+            this.age = age;
+            this.gender = gender;
+            this.interests = interests;
+            this.bio = function () {
+                alert('hahah')
+            }
+            this.greeting = function() {
+                alert('Hi! I\'m ' + this.name.first + this.name.last )
+            }
+        }
+        var person1 = new Person('zhang', 'tingting', 'female', ['hing', 'skiing']);
+
+        Person.prototype.farewell = function() {
+            alert(this.name.first + 'has left the building');
+        }
+    </script>
+</html>
