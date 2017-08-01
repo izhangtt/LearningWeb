@@ -1,0 +1,15 @@
+mac下nodejs 更新到最新版本的最新方法 
+第一步：使用npm安装n模块
+**n模块是专门用来管理nodejs版本的
+sudo npm install -g n
+**提示 : 如果不使用sudo作为前缀，很可能出现权限访问异常导致安装失败
+第二步：升级nodejs
+升级nodejs是有两种方法： 
+第一种是升级到最新版本
+sudo n latest
+第二种是升级到稳定版本
+sudo n stable
+**提示 : 建议是稳定版本 
+
+update npm:
+sudo npm update npm -g
