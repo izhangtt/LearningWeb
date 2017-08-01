@@ -25,4 +25,6 @@ ng serve --open
 
 ionic安装：
 1.sudo npm install -g ionic/sudo npm install -g cordova
-2.
+2.$ ionic start cutePuppyPics
+3.$ cd cutePuppyPics
+4.$ ionic serve
