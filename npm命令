@@ -28,3 +28,5 @@ ionic安装：
 2.$ ionic start cutePuppyPics
 3.$ cd cutePuppyPics
 4.$ ionic serve
+//常见错误
+Error: Cannot find module '@ionic/app-scripts'，解决：npm install @ionic/app-scripts@latest --save-dev；
