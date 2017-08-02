@@ -23,3 +23,7 @@
 ```
 <div v-on:click.self="doThat">...</div>
 ```
+点击事件将只会触发一次
+```
+<a v-on:click.once="doThis"></a>
+```
