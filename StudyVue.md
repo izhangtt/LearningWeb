@@ -3,23 +3,23 @@
 ```
 <a v-on:click.stop="doThis"></a>
 ```
-<!-- 提交事件不再重载页面 -->
+提交事件不再重载页面
 ```
 <form v-on:submit.prevent="onSubmit"></form>
 ```
-<!-- 修饰符可以串联  -->
+ 修饰符可以串联
 ```
 <a v-on:click.stop.prevent="doThat"></a>
 ```
-<!-- 只有修饰符 -->
+只有修饰
 ```
 <form v-on:submit.prevent></form>
 ```
-<!-- 添加事件侦听器时使用事件捕获模式 -->
+添加事件侦听器时使用事件捕获模式
 ```
 <div v-on:click.capture="doThis">...</div>
 ```
-<!-- 只当事件在该元素本身（比如不是子元素）触发时触发回调 -->
+只当事件在该元素本身（比如不是子元素）触发时触发回调
 ```
 <div v-on:click.self="doThat">...</div>
 ```
