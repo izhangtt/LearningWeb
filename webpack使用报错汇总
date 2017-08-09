@@ -1,0 +1,9 @@
+```
+ERROR in ./entry.js
+Module not found: Error: Can't resolve 'css' in '/Users/ztt/izhangtt/Vue_study'
+BREAKING CHANGE: It's no longer allowed to omit the '-loader' suffix when using loaders.
+                 You need to specify 'css-loader' instead of 'css',
+                 see https://webpack.js.org/guides/migrating/#automatic-loader-module-name-extension-removed
+ @ ./entry.js 1:0-22
+ ```
+ 解决办法webpack ./entry.js bundle.js --module-bind 'css=style-loader!css-loader'
