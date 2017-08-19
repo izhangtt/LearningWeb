@@ -55,6 +55,13 @@ npm install --global vue-cli
 vue init webpack my-project
 ```
 ## 安装依赖，走你
-```cd my-project
+```
+cd my-project
 npm install
-npm run dev```
+npm run dev
+```
+## 淘宝镜像
+```
+npm config set registry https://registry.npm.taobao.org
+检查是否配置成功：npm config list
+```
