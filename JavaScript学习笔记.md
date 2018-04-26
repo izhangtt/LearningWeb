@@ -41,6 +41,8 @@ var 声明拘捕变量和全局变量
 let 声明块级作用域的局部变量
 const 声明块级作用域的只读的命名常量
 (注：x=42 直接赋值, 这样会声明一个全局变量并会在严格模式下产生一个ReferenceError,声明变量时不应该用这种方式)
+#### ReferenceError(引用错误)对象表明一个不存在的变量被引用
+当你尝试引用一个未被定一个变量时，将会抛出一个ReferenceError
 ```
 
 var 1;let x;用var或let声明的变量，如果没有赋初值，其值为undefined <br>
@@ -76,5 +78,4 @@ typeof(n);
 console.log(n*32);//0
 ```
 
-#### ReferenceError(引用错误)对象表明一个不存在的变量被引用
-当你尝试引用一个未被定一个变量时，将会抛出一个ReferenceError
+
