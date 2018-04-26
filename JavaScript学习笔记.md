@@ -42,3 +42,39 @@ let 声明块级作用域的局部变量
 const 声明块级作用域的只读的命名常量
 (注：x=42 直接赋值, 这样会声明一个全局变量并会在严格模式下产生一个ReferenceError,声明变量时不应该用这种方式)
 ```
+
+var 1;let x;用var或let声明的变量，如果没有赋初值，其值为undefined <br>
+1.使用undefined来判断变量是否已经赋值
+```
+var input;
+if(input === undefined){
+  doThis();
+}else {
+  doThat();
+}
+```
+2.undefined值在Boolean环境中会被当作false。
+```
+var myArray = [];
+if(!myArray[0]) {
+//数组中的元素未被赋值，是undefined，当作了false
+  myFunction();
+}
+```
+3.数值环境中的undefined值会被转换为NaN
+```
+var a;
+//计算为NaN
+a+2;
+```
+
+4.当你对一个null变量求值的时候空值 null 在数值类型环境中会被当作0来对待，而布尔类型环境中会被当作 false。
+```
+var n = null;
+typeof(n);
+//object
+console.log(n*32);//0
+```
+
+#### ReferenceError(引用错误)对象表明一个不存在的变量被引用
+当你尝试引用一个未被定一个变量时，将会抛出一个ReferenceError
